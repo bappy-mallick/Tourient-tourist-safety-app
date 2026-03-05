@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background image -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/registeration_bg" />
+
+    <!-- Translucent card in the center -->
+    <LinearLayout
+        android:id="@+id/centerCard"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="#B3FFFFFF"
+        android:padding="24dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:elevation="6dp">
+
+        <!-- App logo and name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="63dp"
+                android:layout_height="44dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/app_logo" />
+
+            <TextView
+                android:text="Tourient"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#222222"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Your trusted guide for safe journeys."
+            android:textColor="#7B3F00"
+            android:textSize="16sp" />
+
+        <!-- Identity Buttons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Choose Your Identity."
+            android:textColor="#222222"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/indianBtn"
+            android:layout_width="260dp"
+            android:layout_height="48dp"
+            android:text="Indian"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:backgroundTint="#FFD1EC"
+            android:layout_marginBottom="18dp" />
+
+        <Button
+            android:id="@+id/foreignerBtn"
+            android:layout_width="260dp"
+            android:layout_height="48dp"
+            android:text="Foreigner"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:backgroundTint="#D5FFD1" />
+
+    </LinearLayout>
+</RelativeLayout>

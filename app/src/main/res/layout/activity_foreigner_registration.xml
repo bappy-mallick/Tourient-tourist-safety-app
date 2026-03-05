@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forgien_selected_bg" />
+
+    <!-- Centered Translucent Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="#B3FFFFFF"
+        android:padding="28dp"
+        android:layout_margin="32dp"
+        android:gravity="center"
+        android:elevation="8dp">
+
+        <!-- Logo and App Name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/app_logo"
+                android:contentDescription="App Logo"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:text="Tourient"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#222222"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Your trusted guide for safe journeys."
+                android:textSize="16sp"
+                android:textColor="#7B3F00"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Select your country -->
+        <TextView
+            android:text="Select your country"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Scrollable Vertical Radiobar (left aligned) -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioGroup
+                android:id="@+id/countryRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start">
+
+                <RadioButton android:id="@+id/countryAfghanistan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Afghanistan" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryAustralia" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Australia" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryBangladesh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bangladesh" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryCanada" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Canada" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryChina" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="China" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryDubai" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dubai (UAE)" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryFrance" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="France" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryGermany" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Germany" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryIndonesia" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Indonesia" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryItaly" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Italy" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryJapan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Japan" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryKenya" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Kenya" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryMalaysia" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Malaysia" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryNetherlands" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Netherlands" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryNewZealand" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="New Zealand" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryNorway" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Norway" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryPhilippines" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Philippines" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryQatar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Qatar" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryRussia" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Russia" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countrySaudiArabia" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Saudi Arabia" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countrySingapore" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Singapore" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countrySouthAfrica" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="South Africa" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countrySouthKorea" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="South Korea" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countrySpain" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Spain" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countrySweden" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sweden" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countrySwitzerland" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Switzerland" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryThailand" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thailand" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryTurkey" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Turkey" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryUK" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="United Kingdom" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/countryUSA" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="United States" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+
+            </RadioGroup>
+        </ScrollView>
+
+
+        <!-- Passport Number Field -->
+        <TextView
+            android:text="Your Passport Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/passportEdit"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Type here"
+            android:textColorHint="#B8C3CE"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:background="@drawable/rounded_blue_bg"
+            android:layout_marginBottom="22dp" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="NEXT ➔"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:backgroundTint="#39172B"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</RelativeLayout>

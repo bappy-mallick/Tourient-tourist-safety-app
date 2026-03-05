@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FBFF"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <!-- Header Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt; Back"
+                android:textSize="16sp"
+                android:textColor="#444" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="INN"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#222" />
+
+            <Button
+                android:id="@+id/btn_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wishlist"
+                android:drawableLeft="@drawable/ic_heart"
+                android:textAllCaps="false"
+                android:backgroundTint="#E8ECF4" />
+        </LinearLayout>
+
+        <!-- Wishlist Title Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_my_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Wishlist"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#22323A" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 hotels saved"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp"
+                android:textColor="#6A707C" />
+
+            <Button
+                android:id="@+id/btn_clear_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear All"
+                android:textSize="13sp"
+                android:background="@drawable/btn_clear_bg"
+                android:textColor="#6477B9"
+                android:layout_marginStart="auto" />
+        </LinearLayout>
+
+        <!-- Card 1 (Hotel) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Hotel Image Section -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <ImageView
+                        android:id="@+id/img_hotel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotel_image_1" />
+
+                    <ImageView
+                        android:id="@+id/btn_fav"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_margin="12dp"
+                        android:layout_gravity="top|left"
+                        android:src="@drawable/ic_heart_filled"
+                        android:background="@drawable/round_bg_white"
+                        android:padding="2dp" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="top|right"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/ic_share"
+                        android:background="@drawable/round_bg_white"
+                        android:padding="2dp" />
+
+                </FrameLayout>
+
+                <!-- Hotel Info Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Boutique Stay Delhi"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="#1C2A42" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="3dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_marginEnd="3dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Delhi, Delhi"
+                            android:textSize="13sp"
+                            android:textColor="#6A707C" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="6dp">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@drawable/ic_star"
+                                android:layout_marginEnd="1dp" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@drawable/ic_star"
+                                android:layout_marginEnd="1dp" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@drawable/ic_star"
+                                android:layout_marginEnd="1dp" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@drawable/ic_star"
+                                android:layout_marginEnd="1dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_rating"
+                            android:layout_marginEnd="2dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.2"
+                            android:textColor="#1AA65B"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="#1AA65B"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charming boutique hotel with personalized service and modern amenities."
+                        android:textSize="14sp"
+                        android:textColor="#6A707C"
+                        android:layout_marginTop="5dp" />
+
+                    <!-- Facility Tags -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wi-Fi"
+                            android:background="@drawable/tag_bg"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textColor="#6477B9"
+                            android:layout_marginEnd="6dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Breakfast"
+                            android:background="@drawable/tag_bg"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textColor="#6477B9"
+                            android:layout_marginEnd="6dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pet-friendly"
+                            android:background="@drawable/tag_bg"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textColor="#6477B9"
+                            android:layout_marginEnd="6dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+2"
+                            android:background="@drawable/tag_bg"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textColor="#6477B9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹4,500"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="#1AA65B"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="per night"
+                            android:textSize="13sp"
+                            android:textColor="#6A707C"
+                            android:layout_marginEnd="8dp" />
+
+                        <Button
+                            android:id="@+id/btn_view_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View Details"
+                            android:textSize="13sp"
+                            android:backgroundTint="#222"
+                            android:textColor="#fff"
+                            android:layout_gravity="end" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2 (Hotel) -->
+        <!-- Similar layout as above: update image, hotel name, tags, price -->
+        <!-- Repeat for additional hotels -->
+
+    </LinearLayout>
+</ScrollView>

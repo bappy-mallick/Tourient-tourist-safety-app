@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/indian_selected_bg" />
+
+    <!-- Centered Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_card_bg"
+        android:padding="24dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="32dp">
+
+        <!-- Logo, App Name, and Tagline -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/app_logo"
+                android:contentDescription="App Logo"
+                android:layout_marginEnd="12dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Tourient"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#6D6A6A"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Your trusted guide\nfor safe journeys."
+                    android:textSize="14sp"
+                    android:textColor="#7B3F00"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- State Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your state"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="12dp"
+            android:gravity="center"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="18dp">
+
+            <RadioGroup
+                android:id="@+id/stateRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start">
+
+                <RadioButton android:id="@+id/andhraPradesh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Andhra Pradesh" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/arunachalPradesh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arunachal Pradesh" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/assam" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Assam" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/bihar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bihar" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/chhattisgarh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chhattisgarh" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/goa" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Goa" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/gujarat" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gujarat" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/haryana" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Haryana" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/himachalPradesh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Himachal Pradesh" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/jharkhand" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Jharkhand" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/karnataka" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Karnataka" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/kerala" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Kerala" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/madhyaPradesh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Madhya Pradesh" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/maharashtra" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Maharashtra" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/manipur" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Manipur" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/meghalaya" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Meghalaya" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/mizoram" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mizoram" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/nagaland" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nagaland" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/odisha" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Odisha" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/punjab" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Punjab" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/rajasthan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rajasthan" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/sikkim" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sikkim" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/tamilNadu" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tamil Nadu" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/telangana" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Telangana" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/tripura" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tripura" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/uttarakhand" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Uttarakhand" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/uttarPradesh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Uttar Pradesh" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+                <RadioButton android:id="@+id/westBengal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="West Bengal" android:buttonTint="#39172B" android:textColor="#222222" android:padding="8dp" android:gravity="start"/>
+
+            </RadioGroup>
+        </ScrollView>
+
+        <!-- Aadhaar Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Aadhaar Number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/aadhaarEdit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:hint="0000 0000 0000"
+            android:textColorHint="#B8C3CE"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="14"
+            android:background="@drawable/rounded_blue_bg"
+            android:layout_marginBottom="22dp" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="NEXT ➔"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:backgroundTint="#39172B"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+</RelativeLayout>

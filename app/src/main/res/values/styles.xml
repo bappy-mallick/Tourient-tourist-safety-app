@@ -1,0 +1,24 @@
+<resources>
+    <style name="CustomTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/foreground</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/primary_foreground</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/secondary_foreground</item>
+        <item name="colorSurface">@color/card</item>
+        <item name="colorOnSurface">@color/card_foreground</item>
+        <item name="colorError">@color/destructive</item>
+        <item name="colorOnError">@color/destructive_foreground</item>
+        <!-- Add as many mappings as you require -->
+    </style>
+
+    <style name="EmergencyButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/red_button_bg</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

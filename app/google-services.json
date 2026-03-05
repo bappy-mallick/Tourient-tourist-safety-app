@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "898052166788",
+    "project_id": "tourient-bappymallick",
+    "storage_bucket": "tourient-bappymallick.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898052166788:android:5fa2377f6923ac4f211ed1",
+        "android_client_info": {
+          "package_name": "com.bappymallick.tourient"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo-4afAFQYXkmJWNM_8kzdmjoDcMvYM-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

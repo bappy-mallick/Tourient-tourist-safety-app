@@ -1,0 +1,22 @@
+<resources>
+    <color name="background">#251C20</color>
+    <color name="foreground">#FAF9FB</color>
+    <color name="card">#251C20</color>
+    <color name="card_foreground">#FAF9FB</color>
+    <color name="popover">#251C20</color>
+    <color name="popover_foreground">#FAF9FB</color>
+    <color name="primary">#FAF9FB</color>
+    <color name="primary_foreground">#3C333A</color>
+    <color name="secondary">#534154</color>
+    <color name="secondary_foreground">#FAF9FB</color>
+    <color name="muted">#534154</color>
+    <color name="muted_foreground">#B5A9BE</color>
+    <color name="accent">#534154</color>
+    <color name="accent_foreground">#FAF9FB</color>
+    <color name="destructive">#913243</color>
+    <color name="destructive_foreground">#FBBFC0</color>
+    <color name="border">#534154</color>
+    <color name="input_background">#534154</color>
+    <color name="switch_background">#CBCED4</color>
+    <!-- Add more as needed for your charts, sidebar etc. -->
+</resources>

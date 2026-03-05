@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imgAccommodation"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/sample_hotel"/>
+
+        <!-- Right Section -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Hotel Name and Rating Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtHotelName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Grand Plaza Hotel"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_marginEnd="2dp"/>
+
+                <TextView
+                    android:id="@+id/txtRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:textSize="14sp"
+                    android:textColor="#FFA500"/>
+            </LinearLayout>
+
+            <!-- Location and Distance -->
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manhattan, New York • 2km"
+                android:textColor="#666"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Availability Chips Row-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/txtAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available"
+                    android:textColor="#4CAF50"
+                    android:background="@drawable/bg_chip_available"
+                    android:padding="4dp"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="6dp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/txtFewRooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Few rooms left"
+                    android:textColor="#D32F2F"
+                    android:background="@drawable/bg_chip_few_rooms"
+                    android:padding="4dp"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="6dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$189/night"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:textColor="#000"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
